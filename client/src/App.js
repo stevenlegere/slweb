@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home';
 import MyAppBar from './Components/MyAppBar/MyAppBar';
+import About from './Components/About/About';
 
 
 // Make GET request to our server's /api route. To grab greating from server, and put it in a state variable called data. This will display a greeting from our server.
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/MyAppBar" element={ <MyAppBar/> } />
+        <Route path="/About" element={ <About/> } />
       </Routes>
     </main>
   );
