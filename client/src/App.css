@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 .App {
   text-align: center;
+}
+
+header {
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.App-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .App-logo {
@@ -7,32 +21,100 @@
   pointer-events: none;
 }
 
+.App-WbSunnyIcon {
+  height: 40vmin;
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-jump 3s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-WbSunnyIcon {
+    animation: App-WbSunnyIcon-spin 9s linear infinite;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FCFAFA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(6px + 1.5vmin);
+  color: #242325;
 }
+
 
 .App-link {
-  color: #61dafb;
+  color: ff6d80;
 }
 
-@keyframes App-logo-spin {
-  from {
+@keyframes App-logo-jump {
+  0%, 50%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes App-WbSunnyIcon-spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
+
+.MenuLink {
+  color: #2497ea;
+  font-size: .85rem;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.AboutHeader {
+  color: #2497ea;
+  font-size: 1rem;
+  font-family: 'Roboto Mono', sans-serif;
+  line-height: 2;
+}
+
+.icon-heading {
+  color: #2497ea;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Roboto Mono', sans-serif;
+  margin: 50px;
+  line-height: 2;
+}
+
+.App-WbSunnyIcon {
+  align-items: center;
+}
+
+.AboutMeText {
+  color: #2497ea;
+  font-size: 1rem;
+  font-family: 'Roboto Mono', sans-serif;
+  margin: 50px;
+  line-height: 2;
+}
+
+.Contact {
+  color: #2497ea;
+  font-size: 1rem;
+  font-family: 'Roboto Mono', sans-serif;
+  text-align: center;
+
+}
+
+
+
+
