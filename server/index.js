@@ -23,7 +23,7 @@ app.post('/api/send-email', async (req, res) => {
 
   // Create a Nodemailer transporter using SMTP transport
   const transporter = nodemailer.createTransport({
-    service: 'your_email_provider',
+    service: 'Gmail',
     auth: {
       user: process.env.EMAIL_USERNAME,
       pass: process.env.EMAIL_PASSWORD,
