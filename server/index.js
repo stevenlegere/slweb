@@ -1,15 +1,56 @@
 // Write some code that will tell the server to disply react app when user goes to home page
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
-const PORT = process.env.PORT || 3001;
+const nodemailer = require('nodemailer');
+
+
 const app = express();
+const PORT = process.env.PORT || 3001;
+
 
 // Have Node serve the files for built React app
 app.use(express.static(path.resolve(__dirname, '../client/build')));
+app.use(express.json());
 
 // If React App makes GET request to the route, respond with a res with our JSON data.
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
+});
+
+app.post('/api/send-email', async (req, res) => {
+    const { name, email, message } = req.body;
+
+  // Create a Nodemailer transporter using SMTP transport
+  const transporter = nodemailer.createTransport({
+    service: 'your_email_provider',
+    auth: {
+      user: process.env.EMAIL_USERNAME,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+  });
+
+  // Setup email data
+  const mailOptions = {
+    from: process.env.EMAIL_USERNAME,
+    to: process.env.EMAIL_USERNAME, // Change this to the recipient email address
+    subject: 'New Contact Form Submission',
+    text: `
+      Name: ${name}
+      Email: ${email}
+      Message: ${message}
+    `,
+  };
+
+  try {
+    // Send the email
+    await transporter.sendMail(mailOptions);
+    console.log('Email sent');
+    res.sendStatus(200);
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.sendStatus(500);
+  }
 });
 
 // All other GET requests not handled before will return our React app
