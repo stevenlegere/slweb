@@ -51,7 +51,7 @@ function MyAppBar() {
         <Link to ="../About" className="MenuLink">About</Link>
         </MenuItem>
         <MenuItem onClick={handleClose} >
-          <Link to ="../Contact" className="MenuLink">Contact</Link>
+          <Link to ="../Contact/ContactForm" className="MenuLink">Contact</Link>
         </MenuItem>
         </Menu>
       </Toolbar>
