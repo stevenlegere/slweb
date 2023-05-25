@@ -36,7 +36,7 @@ function Home() {
                 <img src={logo} className="App-logo" alt="logo" />
                 <h1>Steven Légère</h1>
                 <h3>Junior full stack developer</h3>
-                <p>On an educational journey with The <a href="https://schoolofcode.co.uk/" style={{ color: '#2497ea', }}>School of Code</a></p>
+                <p>Alumni of <a href="https://schoolofcode.co.uk/" style={{ color: '#2497ea', }}>School of Code</a></p>
                 <SocialIcons />
                 <div className="contact-me">
                 <a href={`mailto:${(decodedEmail)}`} style={{color: '#ff6d80',}}>Contact me</a>
