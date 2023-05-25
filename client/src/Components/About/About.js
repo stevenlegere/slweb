@@ -43,8 +43,7 @@ function About() {
             never enjoyed the leaner journey quite as much as this experience
             i’m on now.
             <br></br>
-            My journey so far has seen me develop skills in HTML, CSS and
-            JavaScript. Developing JavaScript with in-depth research,
+            My journey so far has seen me develop skills in HTML, CSS, JavaScript, Node JS and SQL. Developing JavaScript with in-depth research,
             understanding and training in the DOM, React, React Router and React
             Libraries such as Material UI. I am also developing my knowledge in
             Unit and E2E testing in Jest and Playwright. I have a natural

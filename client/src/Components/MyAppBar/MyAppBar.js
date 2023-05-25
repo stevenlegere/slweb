@@ -44,15 +44,15 @@ function MyAppBar() {
         <MenuItem className="MenuItem" onClick={handleClose} >
           <Link to ="../" className="MenuLink">Home</Link>
         </MenuItem>
-        <MenuItem className="MenuItem" onClick={handleClose} >
+        {/* <MenuItem className="MenuItem" onClick={handleClose} >
           <Link to ="../Projects" className="MenuLink">Projects</Link>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem onClick={handleClose} >
         <Link to ="../About" className="MenuLink">About</Link>
         </MenuItem>
-        <MenuItem onClick={handleClose} >
+        {/* <MenuItem onClick={handleClose} >
           <Link to ="../Contact/ContactForm" className="MenuLink">Contact</Link>
-        </MenuItem>
+        </MenuItem> */}
         </Menu>
       </Toolbar>
     </AppBar>
