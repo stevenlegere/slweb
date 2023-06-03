@@ -1,0 +1,106 @@
+/* Responsive Drum Kit */
+
+  /* Make the drum kit wider on larger screens */
+@media (min-width: 768px) {
+  .keys {
+    width: 50%;
+  }
+}
+
+/* Make the drum kit appear as a vertical list on mobile devices */
+@media (max-width: 768px) {
+  .keys {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: space-around;
+  }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+html {
+  /* font-size: 10px; */
+  background: #fcfbfc;
+  background-size: cover;
+}
+ 
+
+.drum {
+  font-size: 40px;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 30vh;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.key {
+  border: .4rem solid #2497ea;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: #2497ea;
+  background: #fcfbfc;
+  /* background: rgba(0,0,0,0.2); */
+  /* text-shadow: 0 0 .5rem black; */
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ff6d80;
+  box-shadow: 0 0 1rem #ff6d80;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #2497ea;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: .3rem;
+  color: #2497ea;
+  text-align: center;
+  padding: 0rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.emoji {
+  font-size: 5rem;
+  letter-spacing: .3rem;
+  text-align: center;
+  padding: 0rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.drumKitText {
+  color: #2497ea;
+  font-size: 1rem;
+  font-family: 'Roboto Mono', sans-serif;
+  margin: 150px;
+  margin-top: -50px;
+  line-height: 2;
+}

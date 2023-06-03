@@ -5,6 +5,8 @@ import './App.css';
 import Home from './Components/Home';
 import MyAppBar from './Components/MyAppBar/MyAppBar';
 import About from './Components/About/About';
+import Projects from './Components/Projects/projects';
+import DrumKit from './Components/Projects/drumKit/drumKit';
 // import ContactForm from './Components/Contact/ContactForm';
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
         <Route path="/" element={ <Home/> } />
         <Route path="/MyAppBar" element={ <MyAppBar/> } />
         <Route path="/About" element={ <About/> } />
+        <Route path="/Projects" element={ <Projects/> } />
         {/* <Route path="/Contact/ContactForm" element={ <ContactForm/> } /> */}
+        <Route path="/Projects/drumKit" element={<DrumKit />} />
       </Routes>
     </main>
   );
