@@ -11,16 +11,6 @@
   min-height: 100vh;
 }
 
-.WeatherApp::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,0.5037909836065574) 0%, rgba(253,187,45,0.55625) 100%); */
-}
 
 .WeatherApp::after {
   content: "";
@@ -58,8 +48,6 @@ input[type="text"] {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  /* background-color: #2196F3;
-  color: #fff; */
   border: none;
   cursor: pointer;
   border-radius: 4px 4px 4px 4px;
@@ -119,8 +107,8 @@ h3 {
 .weather-display {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align items horizontally at the center */
-  justify-content: center; /* Align items vertically at the center */
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 20px;
   border-radius: 8px;
@@ -139,11 +127,10 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   margin-top: 50px;
-  margin-left: 20px; /* Adjust the left margin to a smaller value */
-  margin-right: 20px; /* Adjust the right margin to a smaller value */
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 50px;
   border-radius: 8px;
   background: #fcfbfc;
@@ -157,8 +144,4 @@ h3 {
   .weather-display {
     margin: 10px 20px;
   }
-}
-
-.emoji {
-    font-size: 3.5em;
 }
