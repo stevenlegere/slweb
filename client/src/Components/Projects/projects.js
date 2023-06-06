@@ -16,6 +16,9 @@ function Projects() {
             <br></br>
             <br></br>
                 <Link to ="./Drumkit" style={{color: '#ff6d80'}}>JavaScript Drum Kit</Link>
+                <br></br>
+                <br></br>
+                <Link to ="./WeatherApp" style={{color: '#ff6d80'}}>Weather</Link>
         </div>
         </div>
         

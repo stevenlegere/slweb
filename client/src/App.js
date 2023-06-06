@@ -7,6 +7,7 @@ import MyAppBar from './Components/MyAppBar/MyAppBar';
 import About from './Components/About/About';
 import Projects from './Components/Projects/projects';
 import DrumKit from './Components/Projects/drumKit/drumKit';
+import WeatherApp from './Components/Projects/WeatherApp/WeatherApp';
 // import ContactForm from './Components/Contact/ContactForm';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Projects" element={ <Projects/> } />
         {/* <Route path="/Contact/ContactForm" element={ <ContactForm/> } /> */}
         <Route path="/Projects/drumKit" element={<DrumKit />} />
+        <Route path="/Projects/WeatherApp" element={<WeatherApp />} />
       </Routes>
     </main>
   );
