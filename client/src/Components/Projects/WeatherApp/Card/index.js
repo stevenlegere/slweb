@@ -1,19 +1,13 @@
 import React from 'react';
 
-const forecastIcons = {
-  Clear: './sunny.png',
-  Rain: './rain.png',
-  Clouds: './cloudy.png'
-  // Add more forecast conditions and corresponding icons as needed
-};
-
-function getForecastIcon(forecast) {
-  const icon = forecastIcons[forecast];
-  return icon || null;
-}
-
 export default function Card(props) {
   const { weather } = props;
+
+  // Define the styles for the icons
+  const iconStyles = {
+    fontSize: '150px',
+    color: weather && weather.main_forecast === 'Clear' ? 'yellow' : weather && weather.main_forecast === 'Clouds' ? 'grey' : weather && weather.main_forecast === 'Rain' ? 'blue' : 'inherit',
+  };
 
   return (
     <div className="weather-display">
@@ -21,8 +15,10 @@ export default function Card(props) {
         <>
           <h1>{weather.name}</h1>
           <h1>{Math.round(weather.temperature) - 273}°C</h1>
-          {forecastIcons[weather.main_forecast] && (
-            <img className="icons" src={forecastIcons[weather.main_forecast]} alt="Forecast" />
+          {weather.main_forecast && ( // Added null check here
+            <i className="material-icons" style={iconStyles}>
+              {getIconName(weather.main_forecast)}
+            </i>
           )}
           <p>{weather.description}</p>
           <h3>Feels like: {Math.round(weather.feels_like) - 273}°C</h3>
@@ -35,4 +31,18 @@ export default function Card(props) {
       )}
     </div>
   );
+}
+
+function getIconName(forecast) {
+  // Map the forecast value to the corresponding icon name
+  switch (forecast) {
+    case 'Clear':
+      return 'wb_sunny';
+    case 'Rain':
+      return 'umbrella';
+    case 'Clouds':
+      return 'cloud';
+    default:
+      return '';
+  }
 }
