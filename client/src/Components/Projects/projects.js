@@ -19,6 +19,9 @@ function Projects() {
                 <br></br>
                 <br></br>
                 <Link to ="./WeatherApp" style={{color: '#ff6d80'}}>Weather</Link>
+                <br />
+                <br />
+                <Link to ="./Quiz" style={{color: '#ff6d80'}}>Quiz</Link>
         </div>
         </div>
         
