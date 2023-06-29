@@ -4,7 +4,6 @@ import MyAppBar from "../MyAppBar/MyAppBar";
 import "../Video/Video.css";
 import YoutubeEmbed from "../Video/Video";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import WebcamCapture from "../Webcam/webcam.js";
 
 function About() {
   return (
@@ -12,7 +11,6 @@ function About() {
       <MyAppBar />
       <header>
       <div>
-        <WebcamCapture />
       </div>
         <div className="AboutHeader">
           <h1>About Me</h1>
