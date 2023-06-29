@@ -10,6 +10,8 @@ function About() {
     <div className="App">
       <MyAppBar />
       <header>
+      <div>
+      </div>
         <div className="AboutHeader">
           <h1>About Me</h1>
           <p>Here's my 10(ish) second intro</p>
