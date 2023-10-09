@@ -24,9 +24,9 @@ function Projects() {
                 <p style={{ color: '#2497ea', }}>Tech Stack: React / Supabase / Netlify / React Testing Library / HTML / CSS / MUI / Figma / Trello.</p>
                 <br></br>
                 <br></br>
-                <Link to ="https://steves-notes-app.netlify.app/" style={{color: '#ff6d80'}} target="_blank">Notes-App</Link><p style={{ color: '#2497ea', }}> A little project to practice my full-stack knowledge</p>
+                {/* <Link to ="https://steves-notes-app.netlify.app/" style={{color: '#ff6d80'}} target="_blank">Notes-App</Link><p style={{ color: '#2497ea', }}> A little project to practice my full-stack knowledge</p>
                 <p style={{ color: '#2497ea', }}>Tech Stack: React / TypeScript / PostreSQL</p>
-                <br></br>
+                <br></br> */}
                 <br></br>
                 <Link to ="./Drumkit" style={{color: '#ff6d80'}}>JavaScript Drum Kit</Link>
                 <br></br>
